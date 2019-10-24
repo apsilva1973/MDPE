@@ -2,7 +2,8 @@ program PMDPE;
 
 uses
   Forms,
-  uMDPE in 'uMDPE.pas' {frmMDPE};
+  uMDPE in 'uMDPE.pas' {frmMDPE},
+  UFuncoes in 'UFuncoes.pas';
 
 {$R *.res}
 
