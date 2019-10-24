@@ -1,8 +1,8 @@
 object frmMDPE: TfrmMDPE
-  Left = 226
-  Top = 80
+  Left = 163
+  Top = 118
   Width = 1145
-  Height = 584
+  Height = 760
   BorderIcons = [biSystemMenu]
   Caption = 'MDPE - Exportar Informa'#231#245'es'
   Color = clBtnFace
@@ -15,9 +15,26 @@ object frmMDPE: TfrmMDPE
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
+  object lbNome: TLabel
+    Left = 63
+    Top = 106
+    Width = 198
+    Height = 13
+    Caption = 'Informe o nome do Arquivo de Parametros'
+    Visible = False
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 742
+    Top = 120
+    Width = 23
+    Height = 22
+    Caption = '...'
+    Visible = False
+    OnClick = SpeedButton1Click
+  end
   object GroupBox1: TGroupBox
     Left = 56
-    Top = 24
+    Top = 193
     Width = 697
     Height = 473
     Caption = 'Parametros de Exporta'#231#227'o'
@@ -255,159 +272,193 @@ object frmMDPE: TfrmMDPE
   end
   object Edi01: TEdit
     Left = 320
-    Top = 81
+    Top = 250
     Width = 113
     Height = 21
     TabOrder = 1
+    OnKeyDown = Edi01KeyDown
     OnKeyPress = Edi01KeyPress
+    OnKeyUp = Edi01KeyUp
   end
   object Edi02: TEdit
     Left = 320
-    Top = 103
+    Top = 272
     Width = 113
     Height = 21
     Color = clMenu
     TabOrder = 2
+    OnKeyDown = Edi02KeyDown
     OnKeyPress = Edi02KeyPress
+    OnKeyUp = Edi02KeyUp
   end
   object Edi03: TEdit
     Left = 320
-    Top = 124
+    Top = 293
     Width = 113
     Height = 21
     Color = clWhite
     TabOrder = 3
+    OnKeyDown = Edi03KeyDown
     OnKeyPress = Edi03KeyPress
+    OnKeyUp = Edi03KeyUp
   end
   object Edi05: TEdit
     Left = 320
-    Top = 172
+    Top = 341
     Width = 113
     Height = 21
     Color = clMenu
     TabOrder = 5
+    OnKeyDown = Edi05KeyDown
     OnKeyPress = Edi05KeyPress
+    OnKeyUp = Edi05KeyUp
   end
   object Edi06: TEdit
     Left = 320
-    Top = 195
+    Top = 364
     Width = 113
     Height = 21
     Color = clWhite
     TabOrder = 6
+    OnKeyDown = Edi06KeyDown
     OnKeyPress = Edi06KeyPress
+    OnKeyUp = Edi06KeyUp
   end
   object Edi07: TEdit
     Left = 320
-    Top = 218
+    Top = 387
     Width = 113
     Height = 21
     Color = clMenu
     TabOrder = 7
+    OnKeyDown = Edi07KeyDown
     OnKeyPress = Edi07KeyPress
+    OnKeyUp = Edi07KeyUp
   end
   object Edi08: TEdit
     Left = 320
-    Top = 241
+    Top = 410
     Width = 113
     Height = 21
     Color = clWhite
     TabOrder = 8
+    OnKeyDown = Edi08KeyDown
     OnKeyPress = Edi08KeyPress
+    OnKeyUp = Edi08KeyUp
   end
   object Edi09: TEdit
     Left = 320
-    Top = 263
+    Top = 432
     Width = 113
     Height = 21
     Color = clMenu
     TabOrder = 9
+    OnKeyDown = Edi09KeyDown
     OnKeyPress = Edi09KeyPress
+    OnKeyUp = Edi09KeyUp
   end
   object Edi10: TEdit
     Left = 320
-    Top = 285
+    Top = 454
     Width = 113
     Height = 21
     Color = clWhite
     TabOrder = 10
+    OnKeyDown = Edi10KeyDown
     OnKeyPress = Edi10KeyPress
+    OnKeyUp = Edi10KeyUp
   end
   object Edi11: TEdit
     Left = 320
-    Top = 307
+    Top = 476
     Width = 113
     Height = 21
     Color = clMenu
     TabOrder = 11
+    OnKeyDown = Edi11KeyDown
     OnKeyPress = Edi11KeyPress
+    OnKeyUp = Edi11KeyUp
   end
   object Edi12: TEdit
     Left = 320
-    Top = 329
+    Top = 498
     Width = 113
     Height = 21
     Color = clWhite
     TabOrder = 12
+    OnKeyDown = Edi12KeyDown
     OnKeyPress = Edi12KeyPress
+    OnKeyUp = Edi12KeyUp
   end
   object Edi13: TEdit
     Left = 320
-    Top = 352
+    Top = 521
     Width = 113
     Height = 21
     Color = clMenu
     TabOrder = 13
+    OnKeyDown = Edi13KeyDown
     OnKeyPress = Edi13KeyPress
+    OnKeyUp = Edi13KeyUp
   end
   object Edi14: TEdit
     Left = 320
-    Top = 374
+    Top = 543
     Width = 113
     Height = 21
     Color = clWhite
     TabOrder = 14
+    OnKeyDown = Edi14KeyDown
     OnKeyPress = Edi14KeyPress
+    OnKeyUp = Edi14KeyUp
   end
   object Edi15: TEdit
     Left = 320
-    Top = 397
+    Top = 566
     Width = 113
     Height = 21
     Color = clMenu
     TabOrder = 15
+    OnKeyDown = Edi15KeyDown
     OnKeyPress = Edi15KeyPress
+    OnKeyUp = Edi15KeyUp
   end
   object Edi16: TEdit
     Left = 320
-    Top = 420
+    Top = 589
     Width = 113
     Height = 21
     Color = clWhite
     TabOrder = 16
+    OnKeyDown = Edi16KeyDown
     OnKeyPress = Edi16KeyPress
+    OnKeyUp = Edi16KeyUp
   end
   object Edi17: TEdit
     Left = 320
-    Top = 442
+    Top = 611
     Width = 113
     Height = 21
     Color = clMenu
     TabOrder = 17
+    OnKeyDown = Edi17KeyDown
     OnKeyPress = Edi17KeyPress
+    OnKeyUp = Edi17KeyUp
   end
   object Edi18: TEdit
     Left = 320
-    Top = 465
+    Top = 634
     Width = 113
     Height = 21
     Color = clWhite
     TabOrder = 18
+    OnKeyDown = Edi18KeyDown
     OnKeyPress = Edi18KeyPress
+    OnKeyUp = Edi18KeyUp
   end
   object Edit35: TEdit
     Left = 464
-    Top = 81
+    Top = 250
     Width = 226
     Height = 21
     ReadOnly = True
@@ -416,7 +467,7 @@ object frmMDPE: TfrmMDPE
   end
   object Edit36: TEdit
     Left = 464
-    Top = 103
+    Top = 272
     Width = 226
     Height = 21
     Color = clMenu
@@ -426,7 +477,7 @@ object frmMDPE: TfrmMDPE
   end
   object Edit37: TEdit
     Left = 464
-    Top = 124
+    Top = 293
     Width = 226
     Height = 21
     Color = clWhite
@@ -436,7 +487,7 @@ object frmMDPE: TfrmMDPE
   end
   object Edit38: TEdit
     Left = 464
-    Top = 173
+    Top = 342
     Width = 226
     Height = 21
     Color = clMenu
@@ -446,7 +497,7 @@ object frmMDPE: TfrmMDPE
   end
   object Edit39: TEdit
     Left = 464
-    Top = 196
+    Top = 365
     Width = 226
     Height = 21
     Color = clWhite
@@ -456,7 +507,7 @@ object frmMDPE: TfrmMDPE
   end
   object Edit40: TEdit
     Left = 464
-    Top = 219
+    Top = 388
     Width = 226
     Height = 21
     Color = clMenu
@@ -466,7 +517,7 @@ object frmMDPE: TfrmMDPE
   end
   object Edit41: TEdit
     Left = 464
-    Top = 242
+    Top = 411
     Width = 226
     Height = 21
     Color = clWhite
@@ -476,7 +527,7 @@ object frmMDPE: TfrmMDPE
   end
   object Edit42: TEdit
     Left = 464
-    Top = 264
+    Top = 433
     Width = 226
     Height = 21
     Color = clMenu
@@ -486,7 +537,7 @@ object frmMDPE: TfrmMDPE
   end
   object Edit43: TEdit
     Left = 464
-    Top = 286
+    Top = 455
     Width = 226
     Height = 21
     Color = clWhite
@@ -496,7 +547,7 @@ object frmMDPE: TfrmMDPE
   end
   object Edit44: TEdit
     Left = 464
-    Top = 308
+    Top = 477
     Width = 226
     Height = 21
     Color = clMenu
@@ -506,7 +557,7 @@ object frmMDPE: TfrmMDPE
   end
   object Edit45: TEdit
     Left = 464
-    Top = 330
+    Top = 499
     Width = 226
     Height = 21
     Color = clWhite
@@ -516,7 +567,7 @@ object frmMDPE: TfrmMDPE
   end
   object Edit46: TEdit
     Left = 464
-    Top = 353
+    Top = 522
     Width = 226
     Height = 21
     Color = clMenu
@@ -526,7 +577,7 @@ object frmMDPE: TfrmMDPE
   end
   object Edit47: TEdit
     Left = 464
-    Top = 375
+    Top = 544
     Width = 226
     Height = 21
     Color = clWhite
@@ -536,7 +587,7 @@ object frmMDPE: TfrmMDPE
   end
   object Edit48: TEdit
     Left = 464
-    Top = 398
+    Top = 567
     Width = 226
     Height = 21
     Color = clMenu
@@ -546,7 +597,7 @@ object frmMDPE: TfrmMDPE
   end
   object Edit49: TEdit
     Left = 464
-    Top = 421
+    Top = 590
     Width = 226
     Height = 21
     Color = clWhite
@@ -556,7 +607,7 @@ object frmMDPE: TfrmMDPE
   end
   object Edit50: TEdit
     Left = 464
-    Top = 443
+    Top = 612
     Width = 226
     Height = 21
     Color = clMenu
@@ -566,7 +617,7 @@ object frmMDPE: TfrmMDPE
   end
   object Edit51: TEdit
     Left = 464
-    Top = 466
+    Top = 635
     Width = 226
     Height = 21
     Color = clWhite
@@ -576,21 +627,59 @@ object frmMDPE: TfrmMDPE
   end
   object Edi04: TEdit
     Left = 321
-    Top = 147
+    Top = 316
     Width = 113
     Height = 21
     Color = clWhite
     TabOrder = 4
+    OnKeyDown = Edi04KeyDown
     OnKeyPress = Edi04KeyPress
+    OnKeyUp = Edi04KeyUp
   end
   object Edit54: TEdit
     Left = 464
-    Top = 149
+    Top = 318
     Width = 226
     Height = 21
     Color = clWhite
     ReadOnly = True
     TabOrder = 36
     Text = 'Dados Cadastrais de Cliente e Postagem'
+  end
+  object RadioGroup1: TRadioGroup
+    Left = 64
+    Top = 24
+    Width = 681
+    Height = 73
+    Caption = 'Selecione a op'#231#227'o desejada:'
+    Items.Strings = (
+      'Arquivo Novo'
+      'Selecionar Arquivo Existente')
+    TabOrder = 37
+    OnClick = RadioGroup1Click
+  end
+  object EdiNome: TEdit
+    Left = 63
+    Top = 121
+    Width = 679
+    Height = 21
+    TabOrder = 38
+    Visible = False
+  end
+  object Button1: TButton
+    Left = 60
+    Top = 679
+    Width = 173
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 39
+    Visible = False
+    OnClick = Button1Click
+  end
+  object od: TOpenDialog
+    DefaultExt = '*.ini'
+    Filter = 'Arquivos Ini|*.ini'
+    Left = 984
+    Top = 24
   end
 end
