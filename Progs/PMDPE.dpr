@@ -2,12 +2,12 @@ program PMDPE;
 
 uses
   Forms,
-  uMDPE in 'uMDPE.pas' {Form1};
+  uMDPE in 'uMDPE.pas' {frmMDPE};
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmMDPE, frmMDPE);
   Application.Run;
 end.
