@@ -69,6 +69,24 @@ type
     Edi04: TEdit;
     Edit54: TEdit;
     procedure FormShow(Sender: TObject);
+    procedure Edi01KeyPress(Sender: TObject; var Key: Char);
+    procedure Edi02KeyPress(Sender: TObject; var Key: Char);
+    procedure Edi03KeyPress(Sender: TObject; var Key: Char);
+    procedure Edi04KeyPress(Sender: TObject; var Key: Char);
+    procedure Edi05KeyPress(Sender: TObject; var Key: Char);
+    procedure Edi06KeyPress(Sender: TObject; var Key: Char);
+    procedure Edi07KeyPress(Sender: TObject; var Key: Char);
+    procedure Edi08KeyPress(Sender: TObject; var Key: Char);
+    procedure Edi09KeyPress(Sender: TObject; var Key: Char);
+    procedure Edi10KeyPress(Sender: TObject; var Key: Char);
+    procedure Edi11KeyPress(Sender: TObject; var Key: Char);
+    procedure Edi12KeyPress(Sender: TObject; var Key: Char);
+    procedure Edi13KeyPress(Sender: TObject; var Key: Char);
+    procedure Edi14KeyPress(Sender: TObject; var Key: Char);
+    procedure Edi15KeyPress(Sender: TObject; var Key: Char);
+    procedure Edi16KeyPress(Sender: TObject; var Key: Char);
+    procedure Edi17KeyPress(Sender: TObject; var Key: Char);
+    procedure Edi18KeyPress(Sender: TObject; var Key: Char);
   private
     { Private declarations }
   public
@@ -85,6 +103,221 @@ implementation
 procedure TfrmMDPE.FormShow(Sender: TObject);
 begin
 Edi01.SetFocus;
+end;
+
+procedure TfrmMDPE.Edi01KeyPress(Sender: TObject; var Key: Char);
+begin
+// Alterar a tecla TAB para ENTER.
+// No evento KeyPress do Form, digite...
+  with Sender do
+  if Key = #13 then
+  begin
+    SelectNext(Sender as tWinControl, True, True);
+    Key := Char(0);
+  end;
+end;
+
+procedure TfrmMDPE.Edi02KeyPress(Sender: TObject; var Key: Char);
+begin
+// Alterar a tecla TAB para ENTER.
+// No evento KeyPress do Form, digite...
+  with Sender do
+  if Key = #13 then
+  begin
+    SelectNext(Sender as tWinControl, True, True);
+    Key := Char(0);
+  end;
+end;
+procedure TfrmMDPE.Edi03KeyPress(Sender: TObject; var Key: Char);
+begin
+// Alterar a tecla TAB para ENTER.
+// No evento KeyPress do Form, digite...
+  with Sender do
+  if Key = #13 then
+  begin
+    SelectNext(Sender as tWinControl, True, True);
+    Key := Char(0);
+  end;
+end;
+
+procedure TfrmMDPE.Edi04KeyPress(Sender: TObject; var Key: Char);
+begin
+// Alterar a tecla TAB para ENTER.
+// No evento KeyPress do Form, digite...
+  with Sender do
+  if Key = #13 then
+  begin
+    SelectNext(Sender as tWinControl, True, True);
+    Key := Char(0);
+  end;
+end;
+
+procedure TfrmMDPE.Edi05KeyPress(Sender: TObject; var Key: Char);
+begin
+// Alterar a tecla TAB para ENTER.
+// No evento KeyPress do Form, digite...
+  with Sender do
+  if Key = #13 then
+  begin
+    SelectNext(Sender as tWinControl, True, True);
+    Key := Char(0);
+  end;
+end;
+
+procedure TfrmMDPE.Edi06KeyPress(Sender: TObject; var Key: Char);
+begin
+// Alterar a tecla TAB para ENTER.
+// No evento KeyPress do Form, digite...
+  with Sender do
+  if Key = #13 then
+  begin
+    SelectNext(Sender as tWinControl, True, True);
+    Key := Char(0);
+  end;
+end;
+
+procedure TfrmMDPE.Edi07KeyPress(Sender: TObject; var Key: Char);
+begin
+// Alterar a tecla TAB para ENTER.
+// No evento KeyPress do Form, digite...
+  with Sender do
+  if Key = #13 then
+  begin
+    SelectNext(Sender as tWinControl, True, True);
+    Key := Char(0);
+  end;
+end;
+
+procedure TfrmMDPE.Edi08KeyPress(Sender: TObject; var Key: Char);
+begin
+// Alterar a tecla TAB para ENTER.
+// No evento KeyPress do Form, digite...
+  with Sender do
+  if Key = #13 then
+  begin
+    SelectNext(Sender as tWinControl, True, True);
+    Key := Char(0);
+  end;
+end;
+
+procedure TfrmMDPE.Edi09KeyPress(Sender: TObject; var Key: Char);
+begin
+// Alterar a tecla TAB para ENTER.
+// No evento KeyPress do Form, digite...
+  with Sender do
+  if Key = #13 then
+  begin
+    SelectNext(Sender as tWinControl, True, True);
+    Key := Char(0);
+  end;
+end;
+
+procedure TfrmMDPE.Edi10KeyPress(Sender: TObject; var Key: Char);
+begin
+// Alterar a tecla TAB para ENTER.
+// No evento KeyPress do Form, digite...
+  with Sender do
+  if Key = #13 then
+  begin
+    SelectNext(Sender as tWinControl, True, True);
+    Key := Char(0);
+  end;
+end;
+
+procedure TfrmMDPE.Edi11KeyPress(Sender: TObject; var Key: Char);
+begin
+// Alterar a tecla TAB para ENTER.
+// No evento KeyPress do Form, digite...
+  with Sender do
+  if Key = #13 then
+  begin
+    SelectNext(Sender as tWinControl, True, True);
+    Key := Char(0);
+  end;
+end;
+
+procedure TfrmMDPE.Edi12KeyPress(Sender: TObject; var Key: Char);
+begin
+// Alterar a tecla TAB para ENTER.
+// No evento KeyPress do Form, digite...
+  with Sender do
+  if Key = #13 then
+  begin
+    SelectNext(Sender as tWinControl, True, True);
+    Key := Char(0);
+  end;
+end;
+
+procedure TfrmMDPE.Edi13KeyPress(Sender: TObject; var Key: Char);
+begin
+// Alterar a tecla TAB para ENTER.
+// No evento KeyPress do Form, digite...
+  with Sender do
+  if Key = #13 then
+  begin
+    SelectNext(Sender as tWinControl, True, True);
+    Key := Char(0);
+  end;
+end;
+
+procedure TfrmMDPE.Edi14KeyPress(Sender: TObject; var Key: Char);
+begin
+// Alterar a tecla TAB para ENTER.
+// No evento KeyPress do Form, digite...
+  with Sender do
+  if Key = #13 then
+  begin
+    SelectNext(Sender as tWinControl, True, True);
+    Key := Char(0);
+  end;
+end;
+
+procedure TfrmMDPE.Edi15KeyPress(Sender: TObject; var Key: Char);
+begin
+// Alterar a tecla TAB para ENTER.
+// No evento KeyPress do Form, digite...
+  with Sender do
+  if Key = #13 then
+  begin
+    SelectNext(Sender as tWinControl, True, True);
+    Key := Char(0);
+  end;
+end;
+
+procedure TfrmMDPE.Edi16KeyPress(Sender: TObject; var Key: Char);
+begin
+// Alterar a tecla TAB para ENTER.
+// No evento KeyPress do Form, digite...
+  with Sender do
+  if Key = #13 then
+  begin
+    SelectNext(Sender as tWinControl, True, True);
+    Key := Char(0);
+  end;
+end;
+
+procedure TfrmMDPE.Edi17KeyPress(Sender: TObject; var Key: Char);
+begin
+// Alterar a tecla TAB para ENTER.
+// No evento KeyPress do Form, digite...
+  with Sender do
+  if Key = #13 then
+  begin
+    SelectNext(Sender as tWinControl, True, True);
+    Key := Char(0);
+  end;
+end;
+
+procedure TfrmMDPE.Edi18KeyPress(Sender: TObject; var Key: Char);
+begin
+// Alterar a tecla TAB para ENTER.
+// No evento KeyPress do Form, digite...
+  with Sender do
+  if Key = #13 then
+  begin
+    SelectNext(Sender as tWinControl, True, True);
+    Key := Char(0);
+  end;
 end;
 
 end.
