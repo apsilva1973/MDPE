@@ -4,7 +4,11 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+<<<<<<< HEAD
   Dialogs, StdCtrls, ExtCtrls, Buttons,IniFiles, FileCtrl;
+=======
+  Dialogs, StdCtrls, ExtCtrls, Buttons,IniFiles;
+>>>>>>> cc80b4dac4bf4705928b428c1a7cffb684d9d5fd
 
 type
   TfrmMDPE = class(TForm)
@@ -74,6 +78,7 @@ type
     Button1: TButton;
     SpeedButton1: TSpeedButton;
     od: TOpenDialog;
+<<<<<<< HEAD
     lbDestino: TLabel;
     ediDestino: TEdit;
     SBDestino: TSpeedButton;
@@ -85,6 +90,8 @@ type
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
+=======
+>>>>>>> cc80b4dac4bf4705928b428c1a7cffb684d9d5fd
     procedure FormShow(Sender: TObject);
     procedure Edi01KeyPress(Sender: TObject; var Key: Char);
     procedure Edi02KeyPress(Sender: TObject; var Key: Char);
@@ -179,8 +186,11 @@ type
     procedure RadioGroup1Click(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
+<<<<<<< HEAD
     procedure SBDestinoClick(Sender: TObject);
     procedure BtnExportarClick(Sender: TObject);
+=======
+>>>>>>> cc80b4dac4bf4705928b428c1a7cffb684d9d5fd
   private
     { Private declarations }
   public
@@ -928,11 +938,14 @@ begin
        end;
 
        ini := TIniFile.Create(EdiNome.Text);
+<<<<<<< HEAD
        lbDestino.Visible := True;
        ediDestino.Visible := True;
        SBDestino.Visible := True;
        FileListBox1.Visible := True;
        Label2.Visible := true;
+=======
+>>>>>>> cc80b4dac4bf4705928b428c1a7cffb684d9d5fd
        try
           ini.WriteString('MDPE_Params', 'CODIGO_DO_CLIENTE', edi01.text);
           ini.WriteString('MDPE_Params', 'NUM_CT_DE_POSTAGEM', edi02.text);
@@ -979,11 +992,14 @@ begin
        end;
 
        ini := TIniFile.Create(EdiNome.Text);
+<<<<<<< HEAD
        lbDestino.Visible := True;
        ediDestino.Visible := True;
        SBDestino.Visible := True;
        FileListBox1.Visible := True;
        Label2.Visible := true;
+=======
+>>>>>>> cc80b4dac4bf4705928b428c1a7cffb684d9d5fd
        try
           ini.WriteString('MDPE_Params', 'CODIGO_DO_CLIENTE', edi01.text);
           ini.WriteString('MDPE_Params', 'NUM_CT_DE_POSTAGEM', edi02.text);
@@ -1016,6 +1032,7 @@ begin
 
 end;
 
+<<<<<<< HEAD
 procedure TfrmMDPE.SBDestinoClick(Sender: TObject);
 begin
    if od2.Execute then
@@ -1122,4 +1139,6 @@ Begin
 
 end;
 
+=======
+>>>>>>> cc80b4dac4bf4705928b428c1a7cffb684d9d5fd
 end.

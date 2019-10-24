@@ -2,6 +2,7 @@ unit UFuncoes;
 
 interface
 
+<<<<<<< HEAD
 uses SysUtils, StrUtils, Classes,Controls;
 
 function GetTokenAdv(const ALista: string; AItem: integer; ASeparador: char; AAninhado: boolean ) : String; export;
@@ -172,4 +173,8 @@ begin
   Result := Contador-1
 end;
 
+=======
+implementation
+
+>>>>>>> cc80b4dac4bf4705928b428c1a7cffb684d9d5fd
 end.

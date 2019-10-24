@@ -4,6 +4,7 @@ interface
 
 uses SysUtils, StrUtils, Classes,Controls;
 
+<<<<<<< HEAD
 function GetTokenAdv(const ALista: string; AItem: integer; ASeparador: char; AAninhado: boolean ) : String; export;
 function GetTokenAdvCount(const ALista: string; ASeparador: char; AAninhado: boolean): integer;
 function CountLinhasTxt(Path_Arquivo_Destinatario: String) : integer;
@@ -190,5 +191,35 @@ begin   Result  := S;
   if RestLen < 1 then Exit;
   Result := StringOfChar(Ch, RestLen) + S;
 end;
+=======
+
+procedure EnabledAsParent(container: TWinControl);
+
+implementation
+
+
+procedure EnabledAsParent(container: TWinControl);
+var
+ index : integer;
+ aControl : TControl;
+ isContainer : boolean;
+begin
+ for index := 0 to -1 + container.ControlCount do
+ begin
+   aControl := container.Controls[index];
+
+   aControl.Enabled := container.Enabled;
+
+   isContainer := (csAcceptsControls in container.Controls[index].ControlStyle) ;
+
+   if (isContainer) AND (aControl is TWinControl) then
+   begin
+     //recursive for child controls
+     EnabledAsParent(TWinControl(container.Controls[index])) ;
+   end;
+ end;
+end;
+
+>>>>>>> cc80b4dac4bf4705928b428c1a7cffb684d9d5fd
 
 end.

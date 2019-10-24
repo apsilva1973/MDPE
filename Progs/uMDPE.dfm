@@ -1,8 +1,15 @@
 object frmMDPE: TfrmMDPE
+<<<<<<< HEAD
   Left = 192
   Top = 100
   Width = 1275
   Height = 792
+=======
+  Left = 163
+  Top = 118
+  Width = 1145
+  Height = 760
+>>>>>>> cc80b4dac4bf4705928b428c1a7cffb684d9d5fd
   BorderIcons = [biSystemMenu]
   Caption = 'MDPE - Exportar Informa'#231#245'es'
   Color = clBtnFace
@@ -17,7 +24,11 @@ object frmMDPE: TfrmMDPE
   TextHeight = 13
   object lbNome: TLabel
     Left = 63
+<<<<<<< HEAD
     Top = 132
+=======
+    Top = 106
+>>>>>>> cc80b4dac4bf4705928b428c1a7cffb684d9d5fd
     Width = 198
     Height = 13
     Caption = 'Informe o nome do Arquivo de Parametros'
@@ -25,13 +36,18 @@ object frmMDPE: TfrmMDPE
   end
   object SpeedButton1: TSpeedButton
     Left = 742
+<<<<<<< HEAD
     Top = 146
+=======
+    Top = 120
+>>>>>>> cc80b4dac4bf4705928b428c1a7cffb684d9d5fd
     Width = 23
     Height = 22
     Caption = '...'
     Visible = False
     OnClick = SpeedButton1Click
   end
+<<<<<<< HEAD
   object lbDestino: TLabel
     Left = 808
     Top = 45
@@ -104,6 +120,8 @@ object frmMDPE: TfrmMDPE
     ParentFont = False
     Visible = False
   end
+=======
+>>>>>>> cc80b4dac4bf4705928b428c1a7cffb684d9d5fd
   object GroupBox1: TGroupBox
     Left = 56
     Top = 193
@@ -720,7 +738,11 @@ object frmMDPE: TfrmMDPE
   end
   object RadioGroup1: TRadioGroup
     Left = 64
+<<<<<<< HEAD
     Top = 50
+=======
+    Top = 24
+>>>>>>> cc80b4dac4bf4705928b428c1a7cffb684d9d5fd
     Width = 681
     Height = 73
     Caption = 'Selecione a op'#231#227'o desejada:'
@@ -732,7 +754,11 @@ object frmMDPE: TfrmMDPE
   end
   object EdiNome: TEdit
     Left = 63
+<<<<<<< HEAD
     Top = 147
+=======
+    Top = 121
+>>>>>>> cc80b4dac4bf4705928b428c1a7cffb684d9d5fd
     Width = 679
     Height = 21
     TabOrder = 38
@@ -748,6 +774,7 @@ object frmMDPE: TfrmMDPE
     Visible = False
     OnClick = Button1Click
   end
+<<<<<<< HEAD
   object ediDestino: TEdit
     Left = 807
     Top = 60
@@ -796,5 +823,12 @@ object frmMDPE: TfrmMDPE
     Filter = 'Arquivos CSV|*.csv'
     Left = 1056
     Top = 56
+=======
+  object od: TOpenDialog
+    DefaultExt = '*.ini'
+    Filter = 'Arquivos Ini|*.ini'
+    Left = 984
+    Top = 24
+>>>>>>> cc80b4dac4bf4705928b428c1a7cffb684d9d5fd
   end
 end
